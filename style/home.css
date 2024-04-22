@@ -1,0 +1,202 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    border-left-color: black;
+    border-left-style: solid;
+    padding-left: 10px;
+    
+}
+/* header top */
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.search{
+    width: 300px;
+    height: 30px;
+    border-radius: 11px;
+    border-color: #fff;
+    background-color: transparent;
+    
+
+}
+.search::placeholder{
+    /* padding-left: 110px; */
+    text-align: center;
+    color: white;
+}
+
+.link:hover{
+    color: #007bff;
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+.sign-in{
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    padding:  8px 25px;
+    font-size: 17px;
+    background-color: transparent;
+}
+.sign-up{
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    padding:  8px 25px;
+    font-size: 17px;
+    background-color: transparent;
+}
+/* nav */
+.nav{
+    background-color: rgb(37, 37, 37);
+    margin-top: 20px;
+
+}
+
+.hudud{
+    background-color: #386ba1;
+    padding-right: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* header botttom */
+.hero {
+    height: 500px;
+    text-align: center;
+    /* padding: 100px 0; */
+    background-image: url('../images/shilpiq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.latest-news {
+    margin-top: 50px;
+}
+
+.latest-news h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Planshet va kichik ekranlar uchun stil */
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .latest-news h2 {
+        font-size: 1.8em;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
