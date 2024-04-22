@@ -9,103 +9,90 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      />
-    </head>
-    <body>
-      <header>
-        <nav id="navbar">
-          <div class="container navbar">
-            <div class="navbar-top">
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container navbar">
+          <div class="navbar-top">
+            <button class="hamburger" onclick="openNavbar()">
+              <img width="80" src="./images/icons8-hamburger.svg" alt="" />
+            </button>
+            <div style="display: flex; align-items: center">
+              <img width="250" src="./images/logo.png" alt="" />
+            </div>
 
-              <button class="hamburger" onclick="openNavbar()">
-                <img width="80" src="./images/icons8-hamburger.svg" alt="" />
-              </button>
-              <div style="display: flex; align-items: center;">
-                 <img width="250" src="./images/logo.png" alt="" />
-              </div>
-             
-              
-              <div class="button" id="botton">
-                <button class="sign-in"><i>Sign in</i></button>
-                <button class="sign-up"><i>Sign up</i></button>
-              </div>
-              
-              <img class="search" width="50" src="./images/icons8-search.svg" alt="" />
+            <div class="button" id="botton">
+              <button class="sign-in"><i>Sign in</i></button>
+              <button class="sign-up"><i>Sign up</i></button>
+            </div>
+
+            <img
+              class="search"
+              width="50"
+              src="./images/icons8-search.svg"
+              alt=""
+            />
           </div>
 
+          <ul class="navbar__item__blok" id="navbar_nav">
+            <li class="list"><a class="hudud" href="#">Hududlar</a></li>
 
-            <ul class="navbar__item__blok" id="navbar_nav">
-              <li class="list"><a class="hudud" href="#">Hududlar</a></li>
+            <li class="navbar__item__blok__list">
+              <a href="./blog_inner.html" class="navbar__item__blok__list__link"
+                >Nukus</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./menu.html" class="navbar__item__blok__list__link"
+                >Xodjeli</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./about.html" class="navbar__item__blok__list__link"
+                >Qanlikol</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./our_story.html" class="navbar__item__blok__list__link"
+                >Qon'rat</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./blog.html" class="navbar__item__blok__list__link"
+                >Moynaq</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./contact.html" class="navbar__item__blok__list__link"
+                >Taqiyatas</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./contact.html" class="navbar__item__blok__list__link"
+                >Tortkul</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./contact.html" class="navbar__item__blok__list__link"
+                >Ellikqala</a
+              >
+            </li>
+            <li class="navbar__item__blok__list">
+              <a href="./contact.html" class="navbar__item__blok__list__link"
+                >Shimbay</a
+              >
+            </li>
 
-              <li class="navbar__item__blok__list">
-                <a
-                  href="./blog_inner.html"
-                  class="navbar__item__blok__list__link"
-                  >Nukus</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./menu.html" class="navbar__item__blok__list__link"
-                  >Xodjeli</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./about.html" class="navbar__item__blok__list__link"
-                  >Qanlikol</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a
-                  href="./our_story.html"
-                  class="navbar__item__blok__list__link"
-                  >Qon'rat</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./blog.html" class="navbar__item__blok__list__link"
-                  >Moynaq</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./contact.html" class="navbar__item__blok__list__link"
-                  >Taqiyatas</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./contact.html" class="navbar__item__blok__list__link"
-                  >Tortkul</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./contact.html" class="navbar__item__blok__list__link"
-                  >Ellikqala</a
-                >
-              </li>
-              <li class="navbar__item__blok__list">
-                <a href="./contact.html" class="navbar__item__blok__list__link"
-                  >Shimbay</a
-                >
-              </li>
-
-              <button class="navbar__item__blok_close" onclick="closeNavbar()">
-                <img width="30" src="./images/red-x-10333.svg" alt="">
-              </button>
-            </ul>
-
-          <!-- <div class="navbar__top">
-            <a href="#" class="navbar__top__btn"
-              ><img
-                src="./navbar_images/Clone.svg"
-                alt=""
-                class="navbar__item__btn__img"
-            /></a>
-          </div> -->
-
+            <button class="navbar__item__blok_close" onclick="closeNavbar()">
+              <img width="30" src="./images/red-x-10333.svg" alt="" />
+            </button>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <main></main>
     <script>
       window.onscroll = function () {
         scrollFunction();
